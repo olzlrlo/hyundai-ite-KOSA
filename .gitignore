@@ -4,7 +4,7 @@ bin/
 .setting/
 .idea/
 현대 IT&E_4기/
-idea/
+*.iml
 
 # Compiled class file
 *.class
