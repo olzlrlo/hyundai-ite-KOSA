@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.olzlrlo.simucar.DriveBehavior</OriginalElement>
+  <nodes>
+    <node x="720.0000000000001" y="174.0">com.olzlrlo.simucar.DriveBehavior.TurnRight</node>
+    <node x="0.0" y="174.0">com.olzlrlo.simucar.HonkBehavior.HonkStrongly</node>
+    <node x="994.0000000000001" y="174.0">com.olzlrlo.simucar.DriveBehavior.Stop</node>
+    <node x="308.00000000000006" y="116.0">com.olzlrlo.simucar.Car.Car</node>
+    <node x="163.00000000000006" y="174.0">com.olzlrlo.simucar.HonkBehavior.HonkSoftly</node>
+    <node x="464.03690476190485" y="0.0">com.olzlrlo.simucar.DriveBehavior.DriveBehavior</node>
+    <node x="672.9464285714287" y="367.0">com.olzlrlo.simucar.Car.Sonata</node>
+    <node x="858.0000000000001" y="173.5">com.olzlrlo.simucar.DriveBehavior.TurnLeft</node>
+    <node x="87.0821428571428" y="367.5">com.olzlrlo.simucar.Car.RangeRover</node>
+    <node x="257.9083333333333" y="0.5">com.olzlrlo.simucar.HonkBehavior.HonkBehavior</node>
+    <node x="577.0000000000001" y="174.0">com.olzlrlo.simucar.DriveBehavior.GoStraight</node>
+    <node x="1124.0" y="174.0">com.olzlrlo.simucar.DriveBehavior.BackUp</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.olzlrlo.simucar.DriveBehavior.BackUp" target="com.olzlrlo.simucar.DriveBehavior.DriveBehavior" relationship="REALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="1179.0" y="96.0" />
+      <point x="920.2785714285715" y="96.0" />
+      <point x="920.2785714285715" y="86.0" />
+      <point x="590.7035714285714" y="86.0" />
+      <point x="50.66666666666663" y="28.0" />
+    </edge>
+    <edge source="com.olzlrlo.simucar.DriveBehavior.GoStraight" target="com.olzlrlo.simucar.DriveBehavior.DriveBehavior" relationship="REALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="638.5000000000001" y="96.0" />
+      <point x="920.2785714285715" y="96.0" />
+      <point x="920.2785714285715" y="86.0" />
+      <point x="590.7035714285714" y="86.0" />
+      <point x="50.66666666666663" y="28.0" />
+    </edge>
+    <edge source="com.olzlrlo.simucar.Car.Car" target="com.olzlrlo.simucar.DriveBehavior.DriveBehavior" relationship="DEPENDENCY">
+      <point x="-62.25" y="-85.5" />
+      <point x="370.25000000000006" y="96.0" />
+      <point x="431.77857142857147" y="96.0" />
+      <point x="431.77857142857147" y="86.0" />
+      <point x="489.37023809523816" y="86.0" />
+      <point x="-50.666666666666686" y="28.0" />
+    </edge>
+    <edge source="com.olzlrlo.simucar.Car.Sonata" target="com.olzlrlo.simucar.Car.Car" relationship="GENERALIZATION">
+      <point x="-30.0" y="-28.0" />
+      <point x="702.9464285714287" y="347.0" />
+      <point x="278.075" y="347.0" />
+      <point x="278.075" y="307.0" />
+      <point x="432.50000000000006" y="307.0" />
+      <point x="0.0" y="85.5" />
+    </edge>
+    <edge source="com.olzlrlo.simucar.DriveBehavior.TurnLeft" target="com.olzlrlo.simucar.DriveBehavior.DriveBehavior" relationship="REALIZATION">
+      <point x="0.0" y="-28.0" />
+      <point x="916.0000000000001" y="96.0" />
+      <point x="920.2785714285715" y="96.0" />
+      <point x="920.2785714285715" y="86.0" />
+      <point x="590.7035714285714" y="86.0" />
+      <point x="50.66666666666663" y="28.0" />
+    </edge>
+    <edge source="com.olzlrlo.simucar.Car.Car" target="com.olzlrlo.simucar.HonkBehavior.HonkBehavior" relationship="TO_ONE">
+      <point x="62.25" y="-85.5" />
+      <point x="494.75000000000006" y="96.0" />
+      <point x="441.77857142857147" y="96.0" />
+      <point x="441.77857142857147" y="76.0" />
+      <point x="378.7416666666666" y="76.0" />
+      <point x="48.333333333333314" y="27.5" />
+    </edge>
+    <edge source="com.olzlrlo.simucar.Car.Car" target="com.olzlrlo.simucar.HonkBehavior.HonkBehavior" relationship="DEPENDENCY">
+      <point x="-62.25" y="-85.5" />
+      <point x="370.25000000000006" y="96.0" />
+      <point x="431.77857142857147" y="96.0" />
+      <point x="431.77857142857147" y="86.0" />
+      <point x="330.4083333333333" y="86.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="com.olzlrlo.simucar.Car.RangeRover" target="com.olzlrlo.simucar.DriveBehavior.Stop" relationship="CREATE">
+      <point x="-33.0" y="-27.5" />
+      <point x="120.0821428571428" y="347.0" />
+      <point x="71.5" y="347.0" />
+      <point x="71.5" y="327.0" />
+      <point x="1049.0" y="327.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="com.olzlrlo.simucar.Car.RangeRover" target="com.olzlrlo.simucar.Car.Car" relationship="GENERALIZATION">
+      <point x="33.0" y="-27.5" />
+      <point x="186.0821428571428" y="347.0" />
+      <point x="278.075" y="347.0" />
+      <point x="278.075" y="307.0" />
+      <point x="432.50000000000006" y="307.0" />
+      <point x="0.0" y="85.5" />
+    </edge>
+    <edge source="com.olzlrlo.simucar.Car.RangeRover" target="com.olzlrlo.simucar.HonkBehavior.HonkStrongly" relationship="CREATE">
+      <point x="-33.0" y="-27.5" />
+      <point x="120.0821428571428" y="347.0" />
+      <point x="71.5" y="347.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="com.olzlrlo.simucar.DriveBehavior.TurnRight" target="com.olzlrlo.simucar.DriveBehavior.DriveBehavior" relationship="REALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="779.0000000000001" y="96.0" />
+      <point x="920.2785714285715" y="96.0" />
+      <point x="920.2785714285715" y="86.0" />
+      <point x="590.7035714285714" y="86.0" />
+      <point x="50.66666666666663" y="28.0" />
+    </edge>
+    <edge source="com.olzlrlo.simucar.Car.Sonata" target="com.olzlrlo.simucar.DriveBehavior.Stop" relationship="CREATE">
+      <point x="30.0" y="-28.0" />
+      <point x="762.9464285714287" y="347.0" />
+      <point x="737.9464285714287" y="347.0" />
+      <point x="737.9464285714287" y="337.0" />
+      <point x="1049.0" y="337.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="com.olzlrlo.simucar.Car.Sonata" target="com.olzlrlo.simucar.HonkBehavior.HonkSoftly" relationship="CREATE">
+      <point x="30.0" y="-28.0" />
+      <point x="762.9464285714287" y="347.0" />
+      <point x="737.9464285714287" y="347.0" />
+      <point x="737.9464285714287" y="317.0" />
+      <point x="225.5" y="317.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="com.olzlrlo.simucar.DriveBehavior.Stop" target="com.olzlrlo.simucar.DriveBehavior.DriveBehavior" relationship="REALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="1049.0" y="96.0" />
+      <point x="920.2785714285715" y="96.0" />
+      <point x="920.2785714285715" y="86.0" />
+      <point x="590.7035714285714" y="86.0" />
+      <point x="50.66666666666663" y="28.0" />
+    </edge>
+    <edge source="com.olzlrlo.simucar.HonkBehavior.HonkSoftly" target="com.olzlrlo.simucar.HonkBehavior.HonkBehavior" relationship="REALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="225.50000000000006" y="96.0" />
+      <point x="150.27857142857147" y="96.0" />
+      <point x="150.27857142857147" y="86.0" />
+      <point x="282.075" y="86.0" />
+      <point x="-48.333333333333314" y="27.5" />
+    </edge>
+    <edge source="com.olzlrlo.simucar.Car.Car" target="com.olzlrlo.simucar.DriveBehavior.DriveBehavior" relationship="TO_ONE">
+      <point x="62.25" y="-85.5" />
+      <point x="494.75000000000006" y="96.0" />
+      <point x="441.77857142857147" y="96.0" />
+      <point x="441.77857142857147" y="76.0" />
+      <point x="540.0369047619049" y="76.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="com.olzlrlo.simucar.HonkBehavior.HonkStrongly" target="com.olzlrlo.simucar.HonkBehavior.HonkBehavior" relationship="REALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="71.5" y="96.0" />
+      <point x="150.27857142857147" y="96.0" />
+      <point x="150.27857142857147" y="86.0" />
+      <point x="282.075" y="86.0" />
+      <point x="-48.333333333333314" y="27.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.8716108452950558" showDependencies="true" x="617.0" y="211.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
