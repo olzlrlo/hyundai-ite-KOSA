@@ -1,4 +1,4 @@
-package com.olzlrlo.jdbctest;
+package com.olzlrlo.jdbctestwithatp;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -9,20 +9,22 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Properties;
 
-public class WithDriverManager {
+public class DBConnection {
 
     private static Connection conn;
 
-    private WithDriverManager() {}
+    private DBConnection() {
+    }
 
     static {
-        Properties properties = new Properties();  // 환경 설정 파일을 읽어올 객체 생성
+        // 환경설정 파일을 읽어오기 위한 객체 생성
+        Properties properties  = new Properties();
         Reader reader;
         try {
             reader = new FileReader("lib/oracle.properties");  // 읽어올 파일 지정
-            properties.load(reader);  // 설정 파일 load
+            properties.load(reader);                           // 설정 파일 로딩하기
         } catch (FileNotFoundException e1) {
-            System.out.println("예외: 지정한 파일을 찾을 수 없음 :" + e1.getMessage());
+            System.out.println("예외: 지정한 파일을 찾을수없습니다 :" + e1.getMessage());
             e1.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
@@ -38,7 +40,7 @@ public class WithDriverManager {
             conn = DriverManager.getConnection(url, user, pwd);
             System.out.println("connection success");
         } catch (ClassNotFoundException e) {
-            System.out.println("예외: Driver 로드 실패 :" + e.getMessage());
+            System.out.println("예외: 드라이버로드 실패 :" + e.getMessage());
             e.printStackTrace();
         } catch (SQLException e) {
             System.out.println("예외: connection fail :" + e.getMessage());
@@ -50,3 +52,4 @@ public class WithDriverManager {
         return conn;
     }
 }
+

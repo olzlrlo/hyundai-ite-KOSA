@@ -1,4 +1,4 @@
-package com.olzlrlo.jdbctest;
+package com.olzlrlo.DBConnection;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;

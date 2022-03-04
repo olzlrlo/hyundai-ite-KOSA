@@ -30,7 +30,7 @@ public class WithOracleDataSource {
         ods.setURL("jdbc:oracle:thin:olzlrlo/me@localhost:1521/orclpdb");
         Connection conn2 = ods.getConnection();
 
-        DatabaseMetaData meta2 = conn1.getMetaData();
+        DatabaseMetaData meta2 = conn2.getMetaData();
         System.out.println("JDBC driver version is " + meta2.getDriverVersion());
 
         /* Oracle Call Interface (OCI) driver */
@@ -41,20 +41,20 @@ public class WithOracleDataSource {
         ods.setPassword("me");
         Connection conn3 = ods.getConnection();
 
-        DatabaseMetaData meta3 = conn1.getMetaData();
+        DatabaseMetaData meta3 = conn3.getMetaData();
         System.out.println("JDBC driver version is " + meta3.getDriverVersion());
 
         // 2
         ods.setURL("jdbc:oracle:oci8:olzlrlo/me@mydb");
         Connection conn4 = ods.getConnection();
 
-        DatabaseMetaData meta4 = conn1.getMetaData();
+        DatabaseMetaData meta4 = conn4.getMetaData();
         System.out.println("JDBC driver version is " + meta4.getDriverVersion());
 
         /* 설정 파일 + 싱글턴 패턴 활용 접속 */
          Connection conn5 = WithDriverManager.getConnection();
 
-        DatabaseMetaData meta5 = conn1.getMetaData();
+        DatabaseMetaData meta5 = conn5.getMetaData();
         System.out.println("JDBC driver version is " + meta5.getDriverVersion());
     }
 
